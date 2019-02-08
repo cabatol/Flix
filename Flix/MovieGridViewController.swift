@@ -22,7 +22,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         collectionView.dataSource = self
         
         
-        let url = URL(string: "https://api.themoviedb.org/3/movie/297762/videos?api_key=9fef6d15dd359a45917aaadb77e49c7e&language=en-US")!
+        let url = URL(string: "https://api.themoviedb.org/3/movie/297762/similar?api_key=9fef6d15dd359a45917aaadb77e49c7e&language=en-US&page=1")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
