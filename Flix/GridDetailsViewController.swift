@@ -1,23 +1,25 @@
 //
-//  MovieDetailsViewController.swift
+//  GridDetailsViewController.swift
 //  Flix
 //
-//  Created by chino abatol on 2/4/19.
+//  Created by chino abatol on 2/7/19.
 //  Copyright © 2019 chino abatol. All rights reserved.
 //
 
 import UIKit
 import AlamofireImage
 
-class MovieDetailsViewController: UIViewController {
+class GridDetailsViewController: UIViewController {
     
-    @IBOutlet weak var backdropView: UIImageView!
+    
+
     @IBOutlet weak var posterView: UIImageView!
+    @IBOutlet weak var backdropView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var synopsisLabel: UILabel!
     
     var movie: [String:Any]!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,6 +39,7 @@ class MovieDetailsViewController: UIViewController {
         let backdropUrl = URL(string: "https://image.tmdb.org/t/p/w780" + backdropPath)
         
         backdropView.af_setImage(withURL: backdropUrl!)
+        
     }
     
 
