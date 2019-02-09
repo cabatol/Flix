@@ -76,7 +76,7 @@
         <scene sceneID="qJV-Yt-xgL">
             <objects>
                 <viewController id="jyQ-wj-n8s" customClass="MovieDetailsViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Nf7-QR-mXr" customClass="MovieDetailsViewCont">
+                    <view key="view" contentMode="scaleToFill" id="Nf7-QR-mXr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
